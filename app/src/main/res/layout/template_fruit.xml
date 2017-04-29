@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small"
+    >
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:id="@+id/image"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:id="@+id/nombre"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="@dimen/icon"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_below="@+id/nombre"
+            android:id="@+id/today"
+            android:text="HOY"/>
+        <ImageView
+            android:layout_width="@dimen/state"
+            android:layout_height="@dimen/state"
+            android:layout_below="@+id/today"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/small"
+            android:src="@drawable/ic_down"
+            android:id="@+id/state"/>
+        <TextView
+            android:layout_width="@dimen/icon"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/state"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/small"
+            android:id="@+id/pricetoday"
+            tools:text="TEST"/>
+        <TextView
+            android:layout_width="@dimen/icon"
+            android:layout_toRightOf="@+id/today"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_below="@+id/nombre"
+            android:id="@+id/yester"
+            android:text="AYER"/>
+        <ImageView
+            android:layout_width="@dimen/state"
+            android:layout_height="@dimen/state"
+            android:layout_below="@+id/yester"
+            android:layout_toRightOf="@+id/state"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toEndOf="@+id/today"
+            android:src="@drawable/ic_up"
+            android:id="@+id/stateyester"/>
+       <TextView
+           android:layout_width="@dimen/icon"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/pricetoday"
+           android:layout_below="@id/stateyester"
+           android:layout_marginTop="@dimen/small"
+           android:layout_marginLeft="@dimen/margin"
+           android:id="@+id/priceyester"
+           tools:text="TEST"/>
+        
+        
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</FrameLayout>
