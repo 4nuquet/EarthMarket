@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">EarthMarket</string>
+
+    <string name="btnIndex">Buscar</string>
+    <string name="btnIndex2">Publicar</string>
+
+    <string-array name="type">
+        <item>Fruta</item>
+        <item>Verdura</item>
+        <item>Especia</item>
+        <item>Hortalizas</item>
+        <item>Legumbres</item>
+        <item>Tuberculo</item>
+    </string-array >
+
+    <string-array name="presentation">
+        <item>Atado</item>
+        <item>Bolsa</item>
+        <item>Bulto</item>
+        <item>Caja</item>
+        <item>Canastilla</item>
+        <item>Guacal</item>
+        <item>Unidad</item>
+    </string-array>
 </resources>

@@ -4,4 +4,11 @@
     <dimen name="icon">100dp</dimen>
     <dimen name="margin">16dp</dimen>
     <dimen name="state">25dp</dimen>
+
+    <dimen name="background">200dp</dimen>
+    <dimen name="normalText">24sp</dimen>
+    <dimen name="title">56sp</dimen>
+    <dimen name="button">250dp</dimen>
+    <dimen name="buttonh">60dp</dimen>
+    <dimen name="height_app_bar">56dp</dimen>
 </resources>

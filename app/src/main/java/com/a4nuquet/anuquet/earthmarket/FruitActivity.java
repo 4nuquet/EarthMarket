@@ -35,8 +35,8 @@ public class FruitActivity extends AppCompatActivity{
         pHoy.setText(""+f.getP_today());
         pYester.setText(""+f.getP_yester());
 
-        Picasso.with(this)
+        /*Picasso.with(this)
                 .load(Uri.parse(f.getImage()))
-                .into(image);
+                .into(image);*/
     }
 }

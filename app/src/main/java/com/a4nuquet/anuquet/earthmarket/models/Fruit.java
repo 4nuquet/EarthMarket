@@ -22,14 +22,6 @@ public class Fruit {
         this.type = type;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
     public int getP_today() {
         return p_today;
     }
@@ -46,7 +38,7 @@ public class Fruit {
         this.p_yester = p_yester;
     }
 
-    String name, type, image;
+    String name, type;
     int p_today;
     int p_yester;
 

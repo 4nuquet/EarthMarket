@@ -61,14 +61,19 @@ public class FruitAdapter extends BaseAdapter {
         TextView pYester = (TextView) rootView.findViewById(R.id.priceyester);
 
         name.setText(f.getName());
-        pHoy.setText(""+f.getP_today());
-        pYester.setText(""+f.getP_yester());
+        pHoy.setText(f.getP_today());
+        pYester.setText(f.getP_yester());
 
+        /*
         Picasso.with(image.getContext())
                 .load(Uri.parse(f.getImage()))
                 .into(image);
-
+        */
         return rootView;
 
+    }
+    public void setData(List<Fruit> data){
+        this.data = data;
+        notifyDataSetChanged();
     }
 }
